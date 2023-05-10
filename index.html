@@ -24,7 +24,7 @@
     <script>
         function load() {
             document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('load')[0].style.display = 'none';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
         }
     </script>
 </head>
@@ -39,7 +39,14 @@
             <!-- 个人肖像 -->
             <section class="me">
                 <section class="portrait">
-                
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <!-- 头像照片 -->
                     <img class="avatar" src="assets/images/avatar.jpg" onload="load()">
                 </section>
@@ -140,7 +147,7 @@
                             <time>2020.9-至今</time>
                         </h3>
                         <p>专业排名
-                            <mark>8/41（保研率40%）</mark>，获电子设计竞赛三等级，电子设计竞赛一等奖，MCM特等奖提名（Finalist），社会实践金奖，人民奖学金一等、优秀共青团员</p>
+                            <mark>8/41（保研率40%）</mark>，获电子设计竞赛三等奖，电子设计竞赛一等奖，MCM特等奖提名（Finalist），社会实践金奖，人民奖学金一等、优秀共青团员</p>
                         <p>主修课程
                             数字电子技术(95) 、模拟电子技术A(90)、自动控制原理A(91) 、现代控制理论(93) 、运筹学(94) </p>    
                     </li>
