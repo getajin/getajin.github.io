@@ -70,6 +70,14 @@
                         <label>英语水平</label>
                         <span>CET-6</span>
                     </li>
+                    <li>
+                        <label>我的故乡</label>
+                        <span>四川绵阳</span>
+                    </li>
+                    <li>
+                        <label>兴趣爱好</label>
+                        <span>吉他、各类运动</span>
+                    </li>
              
                 </ul>
             </section>
@@ -85,8 +93,12 @@
                         <a href="tel:15168285219" target="_blank">13381399253</a>
                     </li>
                     <li>
-                        <label>邮箱</label>
+                        <label>gmail</label>
                         <a href="mailto:ze.zh@hotmail.com" target="_blank">getupajin@gmail.com</a>
+                    </li>
+                    <li>
+                        <label>QQ邮箱</label>
+                        <a href="mailto:ze.zh@hotmail.com" target="_blank">847620483@qq.com</a>
                     </li>
                    
                 </ul>
@@ -126,9 +138,10 @@
             </section>
 
             <section class="qrcode info-unit">
-                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>微信二维码</h2>
                 <hr/>
-                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+                
+                <img class="weixin" src="assets/images/weixin.jpg" onload="load()" style="width: 86%;">
             </section>
 
         </section>
@@ -146,20 +159,21 @@
                             <span>北京科技大学大学 - 自动化（卓越计划）</span>
                             <time>2020.9-至今</time>
                         </h3>
+                        
                         <p>专业排名
-                            <mark>8/41（保研率40%）</mark>，获电子设计竞赛三等奖，电子设计竞赛一等奖，MCM特等奖提名（Finalist），社会实践金奖，人民奖学金二等、优秀共青团员</p>
+                            <mark>8/41（专业保研率40%）</mark>加权分数<mark>87.24</mark></p>
                         <p>主修课程
-                            数字电子技术(95) 、模拟电子技术A(90)、自动控制原理A(91) 、现代控制理论(93) 、运筹学(94) </p>    
+                            &nbsp 数字电子技术(95) 、模拟电子技术A(90)、自动控制原理A(91) 、现代控制理论(93) 、运筹学(94) </p>    
                     </li>
                 </ul>
             </section>
 
            
 
-            <!-- 科研竞赛 -->
+            <!-- 竞赛参与 -->
             <section class="project info-unit">
                 <h2>
-                    <i class="fa fa-terminal" aria-hidden="true"></i>科研竞赛</h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>竞赛参与</h2>
                 <hr/>
                 <ul>
                     <li>
@@ -174,12 +188,11 @@
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [目标] 设计制作信号失真度测量装置，对来自函数/任意波形发生器的周期信号进行采集分析，测得输入信号的总谐波失真 THD，并可在手机上显示测量信息。
                                 <br/>
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]同 1 位同学一起
-                                <br/>
+                                <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [贡献]采用STM32F103开发板作为主控，使用单片机IO口采集外部输入信号，输入信号在ADC内进行采样处理，然后用FFT对采样进行数据处理。确定出基频的频率和幅度，然后找出该信号的各次谐波，进而计算出失真度THDx，通过串口通信打印到电脑上并通过蓝牙模块传到手机上
                                 <br/>
+                                <li>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                                 [效果]北京科技大学电子设计竞赛三等奖 </li>
                         </ul>
@@ -195,13 +208,13 @@
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [目标]小车模拟物流运输，在起点识别颜色按照规划路线进行巡线行驶，找到目标点后停留一段时间后返回起点
+                            
                                 <br/>
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]与 2 位同学
-                                <br/>
+                                <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [贡献]<mark>OpenMv</mark>开发板脱机进行颜色识别并处理，用串口通信发送颜色信号给小车；小车代码底层逻辑书写，小车实物搭建。组织队伍进度推进。
                                 <br/>
+                                <li>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                                 [效果]北京科技大学电子设计竞赛一等奖
                             </li>
@@ -219,20 +232,48 @@
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [目标]研究Wordle填字游戏的报告结果数量，开发一个模型来解释报告的数量变化，并对未来日期的玩家流量进行预测，包括玩家数量，玩家答题的结果分布；开发一个模型，按难度对于给定的单词进行难度分类。
                                 <br/>
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]与 2 位同学
-                                <br/>
+                                <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [贡献]作为编程建模手以及队长参与到本次比赛中，建模内容包括建立时间序列预测模型使用<mark>ARIMA</mark>和<mark>VAR</mark>模型进行预测对比；建立了基于<mark>BP神经网络</mark>的预测模型，并使用了<mark>CIWOA</mark>算法寻找最优权值和阈值来优化<mark>BP神经网络</mark>以及分类；建立了基于<mark>K-means</mark>聚类算法的模型，用来对单词难度进行分类。
+                                
+                                [贡献]作为<mark>编程建模手</mark>以及<mark>队长</mark>参与到本次比赛中，建模内容包括建立时间序列预测模型使用<mark>ARIMA</mark>和<mark>VAR</mark>模型进行预测对比；建立了基于<mark>BP神经网络</mark>的预测模型，并使用了<mark>CIWOA</mark>算法寻找最优权值和阈值来优化<mark>BP神经网络</mark>以及分类；建立了基于<mark>K-means</mark>聚类算法的模型，用来对单词难度进行分类。
                                 <br/>
+                                <li>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                                 [效果]特等奖提名（Finalist）
                             </li>
                         </ul>
                     </li>
+                    <section class="project info-unit">
+                        <h2>
+                            <i class="fa fa-terminal" aria-hidden="true"></i>科研项目</h2>
+                        <hr/>
+                        <ul>
+                    </li>
+                    <li>        
+                        <h3>
+                            <span>[项目1]国家自然科学基金-面向含噪监测数据的一种多分辨率理论与方法研究</span>
+                           
+                            <time>2022.12 - 2023.02</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>关键词：<mark>数据降维、分类拟合</mark></li>
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]跟着本科生导师
+                            </li>
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]跟随导师课题组学习，学习了包括数据搜索，数据读取，数据预处理，以及MDS，lE，LLE等降维算法，以及学习如何在降维后进行分类包括SVM、随机森林等算法。
+                                <br/>
+                            <li>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [项目仓库]<mark>https://gitee.com/skajin/manifolds</mark>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <h3>
-                            <span>[项目1]国家级创新创业项目-光伏发电系统</span>
+                            <span>[项目2]国家级创新创业项目-光伏发电系统</span>
                            
                             <time>2022.04 - 至今</time>
                         </h3>
@@ -242,19 +283,24 @@
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [目标]通过光伏组件将太阳能转化为直流电能，由DC-DC变换器传至直流母线，经过逆变器将直流电转化为与电网同频同相的交流电，实现用户用电并将多余电量并入电网的目的。
                                 <br/>
+                                <li>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]与 4 位 同学
+                                [团队]与 4 位 前辈
                                 <br/>
+                                <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [贡献]设计双向DC-DC电路，通过控制半桥上下管的占空比来控制输出电压的大小和电流的双向流动；单片机代码编写，ADC数据采集电流电压值与PWM输出占空比控制双向DC-DC电流。
                                 <br/>
-            
+                                <li>
+                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    [项目仓库]<mark>https://gitee.com/yysweet/photovoltaic-power-generation</mark>
+                                </li>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[项目2]半导体冷疗设备</span>
+                            <span>[项目3]半导体冷疗设备</span>
                            
                             <time>2022.11 - 2023.01</time>
                         </h3>
@@ -264,12 +310,15 @@
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [目标]研究半导体制冷技术的原理和优势，深入探讨其在冷疗设备中的应用。并基于研究结果设计一款基于半导体制冷技术的便携式穿戴式冷疗设备。
                                 <br/>
+                                <li>
                                 <i class="fa fa-users" aria-hidden="true"></i>
                                 [团队]与 9 位 同学
                                 <br/>
+                                <li>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [贡献]设计并制作一款基于半导体制冷技术的便携式可穿戴冷疗设备的电路，并设计温度控制系统，对半导体冷疗进行实验。
                                 <br/>
+                                <li>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                                 [效果]有商业计划书产出和国家实用性专利（申请中）。
                             </li>
@@ -284,7 +333,7 @@
                 <h2>
                     <i class="fa fa-pencil" aria-hidden="true"></i>自我评价&期望</h2>
                 <hr/>
-                <p>掌握很多项技能，图像处理，数据处理，电子电路设计等等，相信自己在各方面都能做出一些从成果来，但是与之对应的就是精通的很少，精力消耗的比较多。目前对软硬结合感兴趣，想要专精一个方向，除了搞科研，也想要推进社会生产力发展，所以希望研究的方向最终是能落地的，希望能遇到良师指引方向
+                <p>感觉读自动化这几年掌握了很多项技能，图像处理，数据处理，电子电路设计等等，但是与之对应的就是精通的领域很少，精力消耗的比较多。目前对软硬结合感兴趣，想要专精一个方向，除了搞科研，也想要推进社会生产力发展，所以希望研究的方向最终是能落地的，同时最希望能遇到良师指引方向
                    </p>
             </section>
         </section>
